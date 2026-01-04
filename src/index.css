@@ -1,0 +1,54 @@
+/* === SHADOWTRACE | BASE LAYOUT DISCIPLINE === */
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden; /* no unnecessary scroll */
+}
+
+/* Root app container */
+#root {
+  display: flex;
+  flex-direction: row;
+  background: transparent;
+}
+
+/* Page containers */
+.page {
+  flex: 1;
+  padding: 18px 22px;
+  padding-left: 70px; /* rail space */
+  overflow-y: auto;
+}
+
+/* Scrollbar – subtle, not flashy */
+.page::-webkit-scrollbar {
+  width: 6px;
+}
+
+.page::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.page::-webkit-scrollbar-thumb {
+  background-color: rgba(201, 162, 39, 0.25); /* gold soft */
+  border-radius: 4px;
+}
+
+/* Section titles (used across pages) */
+.section-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  color: var(--authority-gold);
+  margin-bottom: 6px;
+}
+
+.section-subtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}

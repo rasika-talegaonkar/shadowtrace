@@ -1,0 +1,103 @@
+/* === SHADOWTRACE | LAW ENFORCEMENT THEME === */
+.bg-video {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+  opacity: 100;
+}
+
+.bg-video::after {
+  content: "";
+}
+
+.video-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
+:root {
+  --bg-main: #050507;
+  --bg-panel: #0b0b0f;
+
+  --threat-red: #c1121f;
+  --threat-red-soft: rgba(193, 18, 31, 0.25);
+
+  --text-main: #e6e6e6;
+  --text-muted: #9a9a9a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(
+    circle at top,
+    #1a0003 0%,
+    #08080b 45%,
+    #050507 100%
+  );
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Headings = authority */
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+}
+
+/* Numbers, IDs, logs */
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Subtle separators */
+.hr {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--authority-gold-soft),
+    transparent
+  );
+  margin: 16px 0;
+}
+
+/* =========================================
+   GLOBAL TEXT GLOW – HEADINGS & SUBHEADINGS
+   ========================================= */
+
+/* Main headings */
+h1,
+h2,
+h3 {
+  color: #f9fafb;
+  text-shadow: 0 0 6px rgb(145, 0, 0);
+}
+
+/* Sub-headings, titles, labels */
+h4,
+h5,
+h6,
+.section-title,
+.page-title,
+.heading,
+.subtitle {
+  color: #e5e7eb;
+  text-shadow: 0 0 6px rgb(145, 0, 0);
+}

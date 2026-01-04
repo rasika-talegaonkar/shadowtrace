@@ -1,0 +1,185 @@
+/* =====================================================
+   INTELLIGENCE REPORT | LAW ENFORCEMENT DOSSIER
+   ===================================================== */
+
+/* MAIN LAYOUT */
+.layout {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  overflow-y: auto;
+}
+
+/* =====================================================
+   REPORT HEADER
+   ===================================================== */
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.report-header h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.report-header p {
+  font-size: 12px;
+  color: #9a9a9a;
+  margin-top: 2px;
+}
+
+/* CONFIDENTIAL TAG */
+.confidential {
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffb3b3;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(193, 18, 31, 0.55);
+  box-shadow:
+    inset 0 0 0 1px rgba(193, 18, 31, 0.12),
+    0 0 14px rgba(127, 0, 8, 0.285); 
+  background: rgba(193, 18, 31, 0.18);
+  letter-spacing: 0.6px;
+}
+
+/* =====================================================
+   META STRIP
+   ===================================================== */
+
+.report-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+
+  background: linear-gradient(180deg, #0f0f0f, #070707);
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(193, 18, 31, 0.25);
+  box-shadow:
+    inset 0 0 0 1px rgba(193, 18, 31, 0.12),
+    0 0 14px rgba(127, 0, 8, 0.285); 
+}
+
+.report-meta span {
+  font-size: 13px;
+  color: #dcdcdc;
+}
+
+.report-meta strong {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* =====================================================
+   REPORT SECTIONS
+   ===================================================== */
+
+.report-section {
+  background: linear-gradient(180deg, #121212, #070707);
+  border-radius: 14px;
+  padding: 18px;
+  border: 1px solid rgba(193, 18, 31, 0.28);
+  box-shadow:
+    inset 0 0 0 1px rgba(193, 18, 31, 0.12),
+    0 0 14px rgba(127, 0, 8, 0.285); 
+}
+
+/* SECTION TITLES */
+.report-section h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+/* SECTION TEXT */
+.report-section p {
+  font-size: 13px;
+  color: #dcdcdc;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   OVERVIEW GRID
+   ===================================================== */
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.overview-grid p {
+  font-size: 13px;
+  color: #dcdcdc;
+  margin-bottom: 6px;
+}
+
+.overview-grid strong {
+  color: #ffffff;
+}
+
+/* =====================================================
+   EVIDENCE LIST
+   ===================================================== */
+
+.evidence-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.evidence-list li {
+  font-size: 13px;
+  color: #dcdcdc;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 0, 0, 0.224);
+}
+
+.evidence-list li:last-child {
+  border-bottom: none;
+}
+
+.evidence-list strong {
+  color: #ffffff;
+}
+
+/* =====================================================
+   NETWORK GRAPH PLACEHOLDER
+   ===================================================== */
+
+.graph-placeholder {
+  height: 160px;
+  border-radius: 12px;
+
+  background: repeating-linear-gradient(
+    45deg,
+    #0a0a0a,
+    #0a0a0a 12px,
+    #070707 12px,
+    #070707 24px
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  color: #777;
+  border: 1px dashed rgba(193, 18, 31, 0.35);
+}
